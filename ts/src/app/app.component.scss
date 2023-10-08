@@ -101,7 +101,7 @@ label {
 
 .headerp.page {
   width: 1299px;
-  margin-left: 220px;
+  margin-left: 219px;
 }
 
 .headerp {
@@ -144,4 +144,28 @@ label {
   margin-top: -2px;
   margin-bottom: 4px;
   position: relative;
+}
+
+#header-language {
+  width: 25%;
+  display: inline-flex;
+}
+
+#language-button {
+  min-width: 97px;
+  height: 34px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin: 17px 23px;
+}
+
+.language-text {
+  padding: 0;
+  color: #333;
+  font-family: "Quicksand";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
