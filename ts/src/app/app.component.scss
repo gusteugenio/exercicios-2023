@@ -104,9 +104,16 @@ label {
 
 /* Cabeçalho */
 
-.headerp.page {
+.main {
   width: 1316px;
   margin-left: 220px;
+  z-index: 1;
+  position: absolute;
+  min-height: 100%;
+}
+
+.headerp.page {
+  width: 1316px;
   z-index: 1;
   position: absolute;
 }
@@ -259,4 +266,9 @@ label {
   box-sizing: border-box;
   border-radius: 50%;
   margin: 19px 29px 19px 0;
+}
+
+.page-body {
+  margin-top: 68px;
+  min-height: calc(100vh - 68px);
 }
