@@ -173,7 +173,7 @@ label {
   border: 1px solid #cccccc;
   box-sizing: border-box;
   border-radius: 3px;
-  margin: 17px 22px 17px 275.82px;
+  margin: 17px 22px 17px 292.82px;
   overflow: hidden;
 }
 
@@ -193,28 +193,31 @@ label {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
 }
 
 .dropdown {
   flex-shrink: 0;
   margin-top: 16px;
   margin-bottom: 14px;
+  cursor: pointer;
 }
 
 .user-header {
   position: relative;
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 #user-informations {
   width: 500px;
-  height: 300px;
+  height: 68px;
   display: flex;
 }
 
 .headerp-txt2 {
   display: block;
+  height: 68px;
   color: #333;
   text-align: right;
   font-family: Quicksand;
@@ -237,8 +240,8 @@ label {
   position: absolute;
   top: 0;
   right: 0;
-  width: 12px; 
-  right: 46px;
+  width: 12px;
+  right: 30px;
   top: 17px;
   height: 12px;
   border-radius: 50%;
@@ -266,9 +269,66 @@ label {
   box-sizing: border-box;
   border-radius: 50%;
   margin: 19px 29px 19px 0;
+  cursor: pointer;
 }
+
+/* Conteúdo central da página */
 
 .page-body {
   margin-top: 68px;
   min-height: calc(100vh - 68px);
+}
+
+
+.title-buttons {
+  display: inline-flex;
+  margin: 0 45px 0 43px;
+  height: 93px;
+}
+
+/* Título do trabalho */
+
+.title-analysis {
+  width: 786px;
+  padding: 20px 0 19px 0;
+}
+
+h2 {
+  margin: 0;
+  height: 54px;
+  flex-shrink: 0;
+  color: #ED7839;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+/* Barra de botões */
+
+.general-options {
+  padding: 20px 45px 5px 0;
+  margin-left: 226px;
+}
+
+#general-buttons {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.make-quote {
+  color: #ED7839;
+  font-family: Roboto;
+  font-size: 14px;
+  margin-top: 6px;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  width: 239px;
+  height: 35px;
 }
