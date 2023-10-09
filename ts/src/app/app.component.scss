@@ -280,7 +280,6 @@ label {
 
 
 .title-buttons {
-  width: 1227px;
   display: inline-flex;
   margin: 0 45px 0 43px;
   height: 93px;
@@ -309,9 +308,9 @@ h2 {
 /* Barra de botões */
 
 .general-options {
-  position: absolute;
+  width: 216px;
   padding: 20px 0 5px 0;
-  margin-left: 1020px;
+  margin-left: 226px;
 }
 
 #general-buttons {
@@ -337,6 +336,7 @@ h2 {
 /* Vídeo */
 
 .video-details {
+  display: inline-flex;
   padding: 0 45px 30px 45px;
   position: relative;
   width: 100%;
@@ -412,4 +412,13 @@ h2 {
   letter-spacing: 1px;
   margin: 0;
   padding-left: 2px;
+}
+
+/* Detalhes da apresentação */
+
+.apresentation-details {
+  width: 242px;
+  height: 439px;
+  background-color: red;
+  margin-left: 200.3px;
 }
