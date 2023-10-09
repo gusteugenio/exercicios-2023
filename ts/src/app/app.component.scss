@@ -104,7 +104,7 @@ label {
 /* Cabeçalho */
 
 .main {
-  width: 1200px;
+  width: 1226.3px;
   margin-left: 220px;
   z-index: 1;
   position: absolute;
@@ -339,11 +339,77 @@ h2 {
 .video-details {
   padding: 0 45px 30px 45px;
   position: relative;
+  width: 100%;
 }
 
 .video-principal {
   position: relative;
   width: 783px;
-  height: 439px;  
+  height: 439px;
   background-image: url("../assets/dewey 1.png");
+}
+
+.video-principal img {
+  position: absolute;
+  width: 783px;
+  height: 439px;
+  border-radius: 3px;
+}
+
+.video-principal h3 {
+  width: 734px;
+  height: 54px;
+  padding: 35px 17px 350px 32px;
+  position: absolute;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 1.2px;
+}
+
+.author {
+  position: absolute;
+  width: 553px;
+  height: 86px;
+  padding: 301px 199px 52px 31px;
+}
+
+.author img {
+  width: 84px;
+  height: 86px;
+  stroke-width: 1px;
+  stroke: #ED7839;
+}
+
+.author-informations {
+  position: absolute;
+  padding: 10px 0 8px 101px;
+}
+
+#author-name {
+  color: #FFF;
+  width: 417px;
+  height: 27px;
+  font-family: Roboto;
+  font-size: 34px;
+  margin: 0 0 5px 0;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 1.7px;
+}
+
+#author-formation {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding-left: 2px;
 }
