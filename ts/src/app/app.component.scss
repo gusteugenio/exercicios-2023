@@ -419,6 +419,77 @@ h2 {
 .apresentation-details {
   width: 242px;
   height: 439px;
-  background-color: red;
+  border-radius: 3px;
+  border: 1px solid #ECECEC;
   margin-left: 200.3px;
+}
+
+#details-text {
+  width: 100%;
+  height: 45px;
+  border-radius: 3px 3px 0px 0px;
+  border: 1px solid #ECECEC;
+  background: #FDF1EB;
+}
+
+#details-text p {
+  width: 212px;
+  color: #4E4E4E;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  margin: 11px 15px 9px 15px;
+}
+
+.presentation-details {
+  width: 212px;
+  height: 364px;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.24px;
+}
+
+.presentation-text {
+  color: #5C5C5C;
+  font-size: 12px;
+  font-style: normal;
+  margin: 15px;
+  line-height: 120%;
+}
+
+.bold-text.one {
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.24px;
+}
+
+#bold-text-2 {
+  color: #5C5C5C;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.28px;
+}
+
+#authors-section {
+  color: #5C5C5C;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.28px;
+}
+
+#universities-list {
+  color: #ADA0A0;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.24px;
 }
