@@ -525,7 +525,7 @@ h2 {
 }
 
 .resume {
-  height: 189px;
+  max-height: 535px;
   border-radius: 3px;
   border: 1px solid #ECECEC;
 }
@@ -558,8 +558,12 @@ h2 {
   letter-spacing: 0.50px;
   align-self: stretch;
   width: 1196.3px;
-  height: 114px;
-  margin: 10px 15px;
+  padding: 15px;
+  transition: max-height 0.5s ease;
+}
+
+#more {
+  display: none;
 }
 
 .btn-show-more {
