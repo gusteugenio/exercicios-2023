@@ -573,3 +573,145 @@ h2 {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* Discussões */
+
+.discussion-section {
+  width: 100%;
+  height: 621px;
+  border-radius: 3px;
+  border: 1px solid #ECECEC;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.discussion-section.text {
+  margin: 0;
+  height: 45px;
+  border-radius: 3px 3px 0px 0px;
+  background: #FDF1EB;
+}
+
+#discussions {
+  height: 100%;
+  width: 1027px;
+  color: #4E4E4E;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  margin: 10px 15px 10px 16px;
+}
+
+.comment {
+  width: 1196.3px;
+  height: 148px;
+  margin: 0 15px 0 15px;
+  border-radius: 4px;
+  border: 1px solid #E7E7E7;
+  background: #FFF;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.comment.card-one {
+  margin-top: 248px;
+}
+
+.comment.card-two {
+  margin-top: 17px;
+  margin-bottom: 15px;
+}
+
+.comment-informations {
+  margin: 17px 23.17px 48px 24.17px;
+  height: 83px;
+  width: 1.148.969px;
+}
+
+.comment-informations p {
+  margin: 0;
+}
+
+#comment-subject {
+  color: #ED7839;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 3px;
+}
+
+#comment-author {
+  color: #5C5C5C;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 542.071px;
+  margin-bottom: 10px;
+}
+
+#comment-explained {
+  color: #4D4D4D;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.comment-options {
+  display: inline-flex;
+  width: 165px;
+  height: 19px;
+  margin-top: 12px;
+}
+
+#more-informations {
+  width: 4px;
+  height: 18px;
+  flex-shrink: 0;
+  margin: 1px 15px 0 0;
+}
+
+.favorite-btn {
+  display: flex;
+  align-items: center;
+  width: 27px;
+  height: 19px;
+  flex-shrink: 0;
+  margin: 0 15px 0 0;
+  position: relative;
+}
+
+#btn-bg {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+#heart {
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 47%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.comment-options p {
+  margin: 0;
+  color: #757575;
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+}
+
+#like-text {
+  margin-right: 15px;
+}
