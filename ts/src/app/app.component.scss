@@ -683,7 +683,7 @@ h2 {
   width: 27px;
   height: 19px;
   flex-shrink: 0;
-  margin: 0 15px 0 0;
+  margin: 1px 15px 0 0;
   position: relative;
 }
 
@@ -698,7 +698,7 @@ h2 {
   height: 11px;
   position: absolute;
   top: 47%;
-  left: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -714,4 +714,46 @@ h2 {
 
 #like-text {
   margin-right: 15px;
+}
+
+.create-topic {
+  margin: 15px 216.5px;
+  width: 794.3px;
+  align-items: center;
+}
+
+.topic-icons {
+  display: inline-flex;
+  margin-left: 210.0060702875399px;
+  margin-right: 223.1384696485623px;
+}
+
+#topic-icon-1 {
+  margin-right: 51.74px;
+}
+
+#topic-icon-2 {
+  margin-right: 53.74px;
+}
+#topic-text-1 {
+  color: #ED7839;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 137.01675px;
+  margin-right: 121.84562px;
+  width: 422px;
+  height: 22px;
+}
+
+#topic-text-2 {
+  color: #595959;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
 }
