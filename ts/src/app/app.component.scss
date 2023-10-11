@@ -593,7 +593,6 @@ h2 {
 }
 
 #discussions {
-  height: 100%;
   width: 1027px;
   color: #4E4E4E;
   font-family: Roboto;
@@ -612,10 +611,6 @@ h2 {
   border: 1px solid #E7E7E7;
   background: #FFF;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
-}
-
-.comment.card-one {
-  margin-top: 248px;
 }
 
 .comment.card-two {
@@ -717,15 +712,14 @@ h2 {
 }
 
 .create-topic {
-  margin: 15px 216.5px;
-  width: 794.3px;
+  margin: 15px 300.15px;
+  margin-bottom: 14px;
   align-items: center;
 }
 
 .topic-icons {
   display: inline-flex;
-  margin-left: 210.0060702875399px;
-  margin-right: 223.1384696485623px;
+  margin: 0 183.74px 35.06px 186px;
 }
 
 #topic-icon-1 {
@@ -735,6 +729,7 @@ h2 {
 #topic-icon-2 {
   margin-right: 53.74px;
 }
+
 #topic-text-1 {
   color: #ED7839;
   font-family: Roboto;
@@ -742,8 +737,8 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-left: 137.01675px;
-  margin-right: 121.84562px;
+  margin-left: 108px;
+  margin-right: 96px;
   width: 422px;
   height: 22px;
 }
@@ -755,5 +750,61 @@ h2 {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  width: 626px;
   line-height: 137.5%;
+  margin: 0;
+  left: 216.5px;
+  right: 216.5px;
+}
+
+.division {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 32px;
+  margin-bottom: 15px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+#divider {
+  position: relative;
+  width: 1027px;
+  margin: 0 99.65px;
+}
+
+.btn-create-topic {
+  position: absolute;
+  cursor: pointer;
+}
+
+.btn-create-topic.img {
+  width: 133px;
+  height: 32px;
+  flex-shrink: 0;
+  margin: 0 546.65px;
+}
+
+.btn-create-topic.text {
+  color: #FFF;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  width: 100%;
+  height: 16px;
+  margin: 0;
+  left: 25px;
+}
+
+#add {
+  margin-left: 14px;
+}
+.topic-btn {
+  display: inline-flex;
+  position: absolute;
+  width: 106px;
+  margin: 0 546.65px;
 }
