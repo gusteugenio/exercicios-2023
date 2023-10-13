@@ -617,6 +617,7 @@ h2 {
 }
 
 .comment.answered-topic {
+  height: 164px;
   margin-top: 17px;
   margin-bottom: 15px;
 }
@@ -663,7 +664,7 @@ h2 {
 
 .comment-options {
   display: inline-flex;
-  width: 165px;
+  width: auto;
   height: 19px;
   margin-top: 12px;
 }
@@ -708,6 +709,11 @@ h2 {
   font-style: normal;
   font-weight: 350;
   line-height: normal;
+}
+
+#comment-indexes {
+  width: auto;
+  cursor: pointer;
 }
 
 #like-text {
@@ -813,6 +819,89 @@ h2 {
   width: 133px;
   height: auto;
   margin: 0 530.2px 0 560.2px;
+}
+
+/* Conteiner de comentários */
+
+.comments-container {
+  width: 1196.3px;
+  height: auto;
+  display: none;
+  margin: 17px 15px 15px 15px;
+  border-radius: 4px;
+  border: 1px solid #E7E7E7;
+  background: #FFF;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.comment.answered-topic.expanded {
+  height: 150px;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+}
+.answer-comment {
+  width: 1196.3px;
+  height: 131px;
+}
+
+.answer-comment.one {
+  background: #F8F8F8;
+}
+
+.answer-comment.three {
+  height: 184px;
+  background: #F8F8F8;
+}
+
+.answer-comment.four {
+  background: #F8F8F8;
+  border-top: none;
+}
+
+.answer-author {
+  display: inline-flex;
+}
+
+.author-name {
+  width: 542.599px;
+  height: 15px;
+  color: #5C5C5C;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 18px 483.706px 10px 24.170px;
+}
+
+.authorid {
+  width: 64.86px;
+  color: #ED7839;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 7px;
+}
+
+.sign-author {
+  width: 20.917px;
+  height: 22.22px;
+  flex-shrink: 0;
+  margin: 11px 24.170px 25px 33.07px;
+}
+
+.answer {
+  margin: 0 24.170px;
+  color: #4D4D4D;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Formulário para adicionar tópico */
@@ -1059,6 +1148,7 @@ form {
 }
 
 /* Footer da página */
+
 #footer {
   margin: 50px 115px 0 115px;
 }
