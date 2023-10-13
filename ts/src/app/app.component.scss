@@ -578,7 +578,7 @@ h2 {
 
 .discussion-section {
   width: 100%;
-  height: 621px;
+  height: auto;
   border-radius: 3px;
   border: 1px solid #ECECEC;
   margin-top: 30px;
@@ -586,7 +586,7 @@ h2 {
 }
 
 .discussion-section.text {
-  margin: 0;
+  margin: 0 0 15px 0;
   height: 45px;
   border-radius: 3px 3px 0px 0px;
   background: #FDF1EB;
@@ -712,8 +712,8 @@ h2 {
 }
 
 .create-topic {
-  margin: 15px 300.15px;
-  margin-bottom: 14px;
+  display: block;
+  margin: 0 300.15px;
   align-items: center;
 }
 
@@ -737,8 +737,7 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-left: 108px;
-  margin-right: 96px;
+  margin: 0 96px 27px 108px;
   width: 422px;
   height: 22px;
 }
@@ -758,13 +757,13 @@ h2 {
 }
 
 .division {
+  margin-top: 14px;
   display: flex;
   width: 100%;
   align-items: center;
   height: 32px;
   margin-bottom: 15px;
   position: relative;
-  margin-bottom: 16px;
 }
 
 #divider {
@@ -774,6 +773,7 @@ h2 {
 }
 
 .btn-create-topic {
+  display: block;
   position: absolute;
   cursor: pointer;
 }
@@ -800,8 +800,10 @@ h2 {
 }
 
 #add {
+  display: block;
   margin-left: 14px;
 }
+
 .topic-btn {
   display: inline-flex;
   position: absolute;
@@ -809,6 +811,101 @@ h2 {
   margin: 0 546.65px;
 }
 
+/* Formulário para adicionar tópico */
+
+form {
+  display: none;
+  height: 245px;
+  margin: 0 15.95px 0 17.53px;
+}
+
+#share-feedback {
+  color: #5C5C5C;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 30.84px 22px 29.3px;
+}
+
+.subject-content {
+  width: 1020.515px;
+  height: 19px;
+  color: #ED7839;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.subject-content.text-1 {
+  margin-bottom: 1px;
+}
+
+.subject {
+  width: 100%;
+  height: 39px;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  background: #FFF;
+}
+
+.subject::placeholder {
+  color: #4D4D4D;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  padding: 10px 572.2px 11px 23.13px;
+}
+
+.subject-content.text-2 {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.topic-content {
+  display: inline-flex;
+  width: 100%;
+  height: 113px;
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  background: #FFF;
+}
+
+#gray-rectangle {
+  margin-top: 82px;
+  width: 100%;
+  height: 31px;
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #CCC;
+  background: #EAF1F2;
+}
+
+#send-topic {
+  width: 205.104px;
+  height: 31px;
+  flex-shrink: 0;
+  margin-top: 82px;
+  border-radius: 0px 0px 4px 0px;
+  border-color: transparent;
+  background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+  color: #FFF;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+/* Footer da página */
 #footer {
   margin: 50px 115px 0 115px;
 }
