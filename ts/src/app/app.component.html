@@ -170,10 +170,22 @@
           <p id="topic-text-2">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade?
             Deixe seus questionamentos ou sugestões para o autor!</p>
         </div>
+
+        
+        <form> <!-- Formulário para enviar tópico -->
+          <p id="share-feedback">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+          <p class="subject-content text-1">Assunto</p>
+          <input class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+          <p class="subject-content text-2">Conteúdo</p>
+          <div class="topic-content">
+            <div id="gray-rectangle"></div>
+            <button id="send-topic">Enviar</button>
+          </div>
+        </form>
         <div class="division">
           <img id="divider" src="../assets/divisória.png">
           <img class="btn-create-topic img" src="../assets/button bg.png">
-          <div class="topic-btn">
+          <div class="topic-btn" (click)="createTopic()">
             <p class="btn-create-topic text">criar tópico</p>
             <img id="add" src="../assets/icon - criar.png">
           </div>
@@ -181,7 +193,7 @@
         <div id="share-ideas"></div>
 
         <div class="cards">
-          <div class="comment card-one">
+          <div class="comment card-one"> <!-- Comentários -->
             <div class="comment-informations">
               <p id="comment-subject">Assunto da pergunta aparece aqui</p>
               <p id="comment-author">Carlos
@@ -219,7 +231,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> <!-- Footer da página -->
       <img id="footer" src="../assets/imagem - footer.png">
   </div>
 </div>
