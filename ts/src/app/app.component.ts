@@ -52,7 +52,7 @@ export class AppComponent {
         division.style.marginTop = '0';
 
         // Ajusta o display do division para quando a função for chamada no sendTopic
-        division.style.display = 'flex;'
+        division.style.display = 'flex';
     }
   }
 
