@@ -125,7 +125,9 @@
               Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum
               lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida
               eros
-              vestibulum<span id="dots">...</span><span id="more">.<br><br>
+              vestibulum<span *ngIf="!showMore" id="dots">...</span><span *ngIf="showMore">.
+
+                <br><br>
 
                 Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat.
                 Proin
@@ -160,8 +162,8 @@
                 at
                 malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem
                 ipsum
-                dolor sit amet, consectetur adipiscing elit.</span><span (click)="readMore()" class="btn-show-more">ver
-                mais</span></p>
+                dolor sit amet, consectetur adipiscing elit.</span>
+                <span (click)="readMore()" class="btn-show-more">{{ showMore ? 'ver menos' : 'ver mais' }}</span></p>
           </div>
         </div>
 
@@ -245,7 +247,9 @@
                 <p class="ops-topic-subject">Assunto da pergunta aparece aqui</p>
                 <p id="comment-author">Carlos
                   Henrique Santos</p>
-                <p id="comment-explained">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                <p id="comment-explained">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
+                  análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
+                </p>
                 <div class="comment-options">
                   <img id="more-informations" src="../assets/mais informações.png">
                   <div class="favorite-btn">
@@ -275,7 +279,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="comments-container"> <!-- Comentários para expansão -->
               <div class="comment answered-topic expanded">
                 <div class="comment-informations">
@@ -285,8 +289,9 @@
                   <p id="comment-explained">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da
                     análise da dimensão e impacto de processo formativo situado impacto de processo formativo
                     processo resente relato inscreve-se no campo
-                      da análise da dimensão e impacto de processo formativo situado impacto de processo formativo
-                      processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</p>
+                    da análise da dimensão e impacto de processo formativo situado impacto de processo formativo
+                    processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo
+                    situado impacto de processo formativo processo?</p>
                   <div class="comment-options">
                     <img id="more-informations" src="../assets/mais informações.png">
                     <div class="favorite-btn">
@@ -305,32 +310,49 @@
                   <img class="sign-author" src="../assets/autor.png">
                 </div>
 
-                <p class="answer">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                <p class="answer">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto
+                  de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no
+                  campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo
+                  processo.</p>
               </div>
-              
+
               <div class="answer-comment two">
                 <div class="answer-author">
                   <p class="author-name">Carlos Henrique Santos</p>
                 </div>
 
-                <p class="answer">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. Obrigada pela resposta, muito interessante o seu trabalho!</p>
+                <p class="answer">Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto
+                  de processo formativo situado impacto de processo formativo. Obrigada pela resposta, muito
+                  interessante o seu trabalho!</p>
               </div>
 
-              <div class="answer-comment three"><div class="answer-author">
+              <div class="answer-comment three">
+                <div class="answer-author">
                   <p class="author-name">Carmila Ferreira Andrade</p>
                   <p class="authorid">Coautor</p>
                   <img class="sign-author" src="../assets/autor.png">
                 </div>
 
-                <p class="answer">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.<br><br> Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p></div>
+                <p class="answer">Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e
+                  impacto de processo formativo situado impacto de processo formativo processo resente relato
+                  inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de
+                  processo formativo processo.<br><br> Situado impacto de processo formativo processo resente relato
+                  inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de
+                  processo formativo processo.</p>
+              </div>
 
-              <div class="answer-comment four"><div class="answer-author">
+              <div class="answer-comment four">
+                <div class="answer-author">
                   <p class="author-name">Adriano da Silva</p>
                   <p class="authorid">Coautor</p>
                   <img class="sign-author" src="../assets/autor.png">
                 </div>
 
-                <p class="answer">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p></div>
+                <p class="answer">Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto
+                  de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no
+                  campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo
+                  processo.</p>
+              </div>
             </div>
           </div>
         </div>

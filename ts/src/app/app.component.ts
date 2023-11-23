@@ -7,29 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DevChuva';
-
+  showMore: boolean = false;
   readMore() {
-    const dots = document.getElementById('dots');
-    const more = document.getElementById('more');
-    const readMoreBtn = document.querySelector('.btn-show-more');
-
-    // Verifica se todos os elementos foram encontrados
-    if (dots && more && readMoreBtn) {
-      // Verifica se os pontos suspensivos estão visíveis
-      if (dots.style.display === "none") {
-        // Se estiverem invisíveis, se tornarão visíveis e o conteúdo adicional será ocultado
-        dots.style.display = "inline";
-        more.style.display = "none";
-        // Atualiza o texto do botão
-        readMoreBtn.innerHTML = "ver mais";
-      } else {
-        // Se estiverem visíveis, se tornarão invisíveis e o conteúdo adicional será exibido
-        dots.style.display = "none";
-        more.style.display = "inline";
-        // Atualiza o texto do botão
-        readMoreBtn.innerHTML = "ver menos";
-      }
-    }
+    this.showMore = !this.showMore;
   }
 
 
