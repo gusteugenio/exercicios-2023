@@ -1,6 +1,10 @@
 <?php
 
 namespace Chuva\Php\WebScrapping;
+use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
+
+require 'Scrapper.php';
+require_once 'php/vendor/autoload.php';
 
 /**
  * Runner for the Webscrapping exercice.
