@@ -15,15 +15,29 @@ class Scrapper {
    */
   public function scrap(\DOMDocument $dom): array {
     return [
-      new Paper(
-        123,
-        'The Nobel Prize in Physiology or Medicine 2023',
-        'Nobel Prize',
-        [
-          new Person('Katalin Karikó', 'Szeged University'),
-          new Person('Drew Weissman', 'University of Pennsylvania'),
-        ]
-      ),
+      $papers = [];
+      
+      // Obter todos os elementos que dizem respeito ao título do trabalho
+      $paperTitle = $dom->getElementsByTagName('h4');
+      $titles = [];
+  
+        foreach ($paperTitle as $h4) {
+          // Verificar classes com 'my-xs paper-title' e atribuir à lista titles
+            if ($h4->getAttribute('class') == 'my-xs paper-title') {
+                $titles[] = $h4->textContent;
+            }
+        }
+
+      // Obter todos os elementoss que dizem respeito ao tipo do trabalho
+      $paperType = $dom->getElementsByTagName('div');
+      $types = [];
+
+      foreach ($paperType as $div) {
+        // Verificar classes com 'tags mr-sm' e atribuir à lista types
+          if ($div->getAttribute('class') === 'tags mr-sm') {
+              $types[] = $div->textContent;
+          }
+      }
     ];
   }
 
