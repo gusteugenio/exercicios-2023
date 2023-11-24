@@ -2,7 +2,7 @@
 
 namespace Chuva\Php\WebScrapping;
 
-libxml_use_internal_errors(TRUE);
+libxml_use_internal_errors(true);
 use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
 
 require 'Scrapper.php';
@@ -44,7 +44,7 @@ class Main
                 $paper->type,
             ];
 
-            // Verificação de autores 
+            // Verificação de autores
             $authors = $paper->authors;
 
 
