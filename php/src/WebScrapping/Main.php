@@ -2,7 +2,7 @@
 
 namespace Chuva\Php\WebScrapping;
 
-libxml_use_internal_errors(true);
+libxml_use_internal_errors(TRUE);
 use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
 
 require 'Scrapper.php';
@@ -18,11 +18,11 @@ class Main
     public static function run(): void
     {
         $dom = new \DOMDocument('1.0', 'utf-8');
-        $dom->loadHTMLFile(__DIR__.'/../../assets/origin.html');
+        $dom->loadHTMLFile(__DIR__ . '/../../assets/origin.html');
 
         $data = (new Scrapper())->scrap($dom);
 
-        $xlsxFile = __DIR__.'/chuvaphp.xlsx';
+        $xlsxFile = __DIR__ . '/chuvaphp.xlsx';
 
         $excelDoc = WriterEntityFactory::createXLSXWriter();
         $excelDoc->openToFile($xlsxFile);
