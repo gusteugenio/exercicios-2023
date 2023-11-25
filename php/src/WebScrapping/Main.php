@@ -7,6 +7,7 @@ use Box\Spout\Writer\Common\Creator\WriterEntityFactory;
 
 require 'Scrapper.php';
 require_once 'vendor/autoload.php';
+
 /**
  * Runner for the Webscrapping exercice.
  */
@@ -46,7 +47,6 @@ class Main
 
             // Verificação de autores
             $authors = $paper->authors;
-
 
             for ($i = 0; $i < 20; ++$i) {
                 if (isset($authors[$i])) {
