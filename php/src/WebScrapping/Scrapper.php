@@ -2,7 +2,7 @@
 
 namespace Chuva\Php\WebScrapping;
 
-require __DIR__ . '/Entity/Paper.php';
+require_once __DIR__ . '/Entity/Paper.php';
 use Chuva\Php\WebScrapping\Entity\Paper;
 use Chuva\Php\WebScrapping\Entity\Person;
 
