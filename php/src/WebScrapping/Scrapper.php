@@ -13,6 +13,12 @@ class Scrapper {
 
   /**
    * Loads paper information from the HTML and returns the array with the data.
+   *
+   * @param \DOMDocument $dom
+   *   The DOM document.
+   *
+   * @return array
+   *   An array containing paper information.
    */
   public function scrap(\DOMDocument $dom): array {
     $papers = [];
@@ -36,7 +42,7 @@ class Scrapper {
         $span = $author->getElementsByTagName('span');
         $authorInfo = [];
 
-        // Atribuir dados do autor (Nome e Instituição) a authorInfo, através de new Person.
+        // Atribuir dados do autor a authorInfo, através de new Person.
         foreach ($span as $span) {
           $authorName = strtr($span->textContent, [';' => '']);
           $institutionName = $span->getAttribute('title');
@@ -60,10 +66,14 @@ class Scrapper {
    * Obtém os textos dos elementos com uma classe específica.
    *
    * @param \DOMDocument $dom
+   *   O documento DOM.
    * @param string $tagName
+   *   O nome da tag.
    * @param string $class
+   *   A classe desejada.
    *
    * @return array
+   *   Um array contendo os textos dos elementos.
    */
   private function getElementsTextByClass(\DOMDocument $dom, string $tagName, string $class): array {
     $elements = $dom->getElementsByTagName($tagName);
