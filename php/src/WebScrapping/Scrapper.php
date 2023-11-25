@@ -60,9 +60,9 @@ class Scrapper
     /**
      * Obtém os textos dos elementos com uma classe específica.
      *
-     * @param \DOMDocument $dom
-     * @param string $tagName
-     * @param string $class
+     * @param  \DOMDocument $dom
+     * @param  string       $tagName
+     * @param  string       $class
      * @return array
      */
     private function getElementsTextByClass(\DOMDocument $dom, string $tagName, string $class): array
